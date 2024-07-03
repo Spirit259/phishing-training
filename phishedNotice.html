@@ -89,21 +89,32 @@
             color: #007bff;
             margin-bottom: 10px;
         }
+        .alert-message {
+            background-color: #dc3545; /* Rouge vif */
+            color: #fff; /* Texte blanc */
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
+    <div class="alert-message text-center">
+        <p><i class="fas fa-exclamation-triangle"></i> Vous avez cliqué sur un lien de phishing simulé ! Soyez prudent.</p>
+    </div>
     <div class="header">
         <img src="companyImageSrc.png" height="50" alt="Logo de l'entreprise">
         <h3><b>Test de Phishing</b></h3>
     </div>
     <div class="container">
-        <div class="jumbotron text-center">
-            <h2>Vous avez cliqué sur un test de phishing simulé.</h2>
-            <h3>Nous vous donnons quelques conseils plus bas pour vous aider à rester en sécurité à l'avenir !</h3>
-        </div>
         <div class="explanation text-center">
             <h3>Qu'est-ce que le phishing ?</h3>
             <p>Le phishing est une tentative de fraude visant à obtenir des informations sensibles telles que des noms d'utilisateur, des mots de passe et des détails de carte bancaire en se faisant passer pour une entité digne de confiance. Vous avez été redirigé ici car vous avez cliqué sur un lien de phishing simulé. Les risques encourus incluent le vol de données personnelles et financières.</p>
+        </div>
+        <div class="jumbotron text-center">
+            <h3> Voici quelques conseils pour vous aider à rester en sécurité à l'avenir !</h3>
         </div>
         <div class="row">
             <div class="col-md-4">
