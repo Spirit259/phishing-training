@@ -145,7 +145,7 @@
             <h3>Qu'est-ce que le phishing ?</h3>
             <p>Le phishing est une tentative de fraude visant à obtenir des informations sensibles telles que des noms d'utilisateur, des mots de passe et des détails de carte bancaire en se faisant passer pour une entité digne de confiance. Vous avez été redirigé ici car vous avez cliqué sur un lien de phishing simulé. Les risques encourus incluent le vol de données personnelles et financières.</p>
         </div>
-        <div class="jumbotron text-center">
+        <div class="jumbotron1 text-center">
             <h3> Voici quelques conseils pour vous aider à rester en sécurité à l'avenir !</h3>
         </div>
         <div class="row">
@@ -193,7 +193,6 @@
             <span class="close">&times;</span>
             <div class="alert-message text-center">
                 <p><i class="fas fa-exclamation-triangle"></i> Vous avez cliqué sur un lien de phishing simulé ! Soyez prudent.</p>
-                <button class="close-alert">Fermer</button>
             </div>
         </div>
     </div>
@@ -207,32 +206,31 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        // Sélectionner le pop-up modal
-        var modal = document.getElementById('myModal');
-        
-        // Sélectionner le bouton qui ouvre le pop-up
-        var openModalButton = document.createElement('button');
-        openModalButton.innerHTML = 'Ouvrir le pop-up';
-        openModalButton.onclick = function() {
+        // Attendre que le DOM soit chargé
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sélectionner le pop-up modal
+            var modal = document.getElementById('myModal');
+            
+            // Afficher le pop-up modal
             modal.style.display = 'block';
-        };
-        document.body.insertBefore(openModalButton, document.body.firstChild);
-        
-        // Sélectionner l'élément de fermeture (la croix)
-        var closeButton = document.getElementsByClassName('close')[0];
-        
-        // Lorsque l'utilisateur clique sur la croix, fermez le pop-up
-        closeButton.onclick = function() {
-            modal.style.display = 'none';
-        };
-        
-        // Lorsque l'utilisateur clique en dehors du pop-up, fermez-le également
-        window.onclick = function(event) {
-            if (event.target == modal) {
+            
+            // Sélectionner l'élément de fermeture (la croix)
+            var closeButton = document.getElementsByClassName('close')[0];
+            
+            // Lorsque l'utilisateur clique sur la croix, fermez le pop-up
+            closeButton.onclick = function() {
                 modal.style.display = 'none';
-            }
-        };
+            };
+            
+            // Lorsque l'utilisateur clique en dehors du pop-up, fermez-le également
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            };
+        });
     </script>
+
 
 </body>
 </html>
