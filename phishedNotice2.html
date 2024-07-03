@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #e9ecef;
             font-family: Arial, sans-serif;
         }
         .header {
@@ -30,8 +30,18 @@
             border-radius: 10px;
             color: #fff;
         }
+        .explanation {
+            background-color: #ffc107;
+            padding: 20px;
+            border-radius: 10px;
+            color: #343a40;
+            margin-bottom: 30px;
+        }
         .card {
             margin-bottom: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            background-color: #fff;
         }
         .card h1 {
             font-size: 2em;
@@ -68,14 +78,17 @@
     <div class="container">
         <div class="jumbotron text-center">
             <h2>Vous avez cliqué sur un test de phishing simulé.</h2>
-            <h3>Voici quelques conseils pour vous aider à rester en sécurité à l'avenir !</h3>
+        </div>
+        <div class="explanation text-center">
+            <h3>Qu'est-ce que le phishing ?</h3>
+            <p>Le phishing est une tentative de fraude visant à obtenir des informations sensibles telles que des noms d'utilisateur, des mots de passe et des détails de carte bancaire en se faisant passer pour une entité digne de confiance. Vous avez été redirigé ici car vous avez cliqué sur un lien de phishing simulé. Les risques encourus incluent le vol de données personnelles et financières.</p>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body text-center">
+                <div class="card text-center">
+                    <div class="card-body">
                         <div class="icon">
-                            <i class="fas fa-stop"></i>
+                            <i class="fas fa-eye"></i>
                         </div>
                         <h1>Tip #1</h1>
                         <h2>Arrêtez, Regardez, Réfléchissez</h2>
@@ -84,8 +97,8 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body text-center">
+                <div class="card text-center">
+                    <div class="card-body">
                         <div class="icon">
                             <i class="fas fa-exclamation-triangle"></i>
                         </div>
@@ -96,8 +109,8 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body text-center">
+                <div class="card text-center">
+                    <div class="card-body">
                         <div class="icon">
                             <i class="fas fa-trash-alt"></i>
                         </div>
