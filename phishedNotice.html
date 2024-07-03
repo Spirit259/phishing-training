@@ -97,6 +97,21 @@
             margin-bottom: 20px;
             font-size: 1.1em;
             font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .alert-message button.close-alert {
+            background: none;
+            border: none;
+            color: inherit;
+            font: inherit;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            font-size: 1em;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -163,5 +178,24 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Attendre que le DOM soit chargé
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sélectionner l'élément d'alerte
+            var alertMessage = document.createElement('div');
+            alertMessage.classList.add('alert-message');
+            alertMessage.innerHTML = '<p><i class="fas fa-exclamation-triangle"></i> Vous avez cliqué sur un lien de phishing simulé ! Soyez prudent.</p><button class="close-alert">Fermer</button>';
+            
+            // Insérer l'alerte au début du corps du document
+            document.body.insertBefore(alertMessage, document.body.firstChild);
+            
+            // Ajouter un gestionnaire d'événement pour le bouton de fermeture
+            var closeButton = alertMessage.querySelector('.close-alert');
+            closeButton.addEventListener('click', function() {
+                alertMessage.style.display = 'none';
+            });
+        });
+    </script>
+
 </body>
 </html>
