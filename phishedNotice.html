@@ -36,6 +36,8 @@
             padding: 20px;
             border-radius: 20px;
             color: #fff;
+            max-width: 600px;
+            margin: 0 auto;
         }
         .explanation {
             background-color: #ffc107;
@@ -109,28 +111,29 @@
         }
         
         .modal-content {
-            background-color: #fefefe;
+            background-color: #dc3545; /* Rouge vif */
             margin: 15% auto; /* Centrer verticalement et horizontalement */
             padding: 20px;
-            border: 1px solid #888;
             border-radius: 10px;
+            color: #fff; /* Texte blanc */
             width: 80%;
             max-width: 600px;
             position: relative;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Ombre légère */
         }
         
         .close {
-            color: #aaa;
+            color: #fff; /* Texte blanc */
             float: right;
             font-size: 28px;
             font-weight: bold;
+            cursor: pointer;
         }
         
         .close:hover,
         .close:focus {
-            color: black;
+            color: #000; /* Texte noir au survol */
             text-decoration: none;
-            cursor: pointer;
         }
 
     </style>
