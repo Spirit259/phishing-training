@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COMPANY Phishing</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             background-color: #f8f9fa;
@@ -12,11 +13,10 @@
         }
         .header {
             background-color: #000;
-            padding: 10px;
-        }
-        .header h3 {
-            margin: 0;
+            padding: 10px 20px;
             color: #fff;
+            display: flex;
+            align-items: center;
         }
         .header img {
             margin-right: 10px;
@@ -25,15 +25,24 @@
             margin-top: 30px;
         }
         .jumbotron {
-            background-color: #e9ecef;
+            background-color: #343a40;
             padding: 30px;
             border-radius: 10px;
+            color: #fff;
         }
-        h2, h3 {
+        .card {
+            margin-bottom: 20px;
+        }
+        .card h1 {
+            font-size: 2em;
+            color: #007bff;
+        }
+        .card h2 {
+            font-size: 1.5em;
             color: #343a40;
         }
-        .col-md-4 {
-            margin-bottom: 20px;
+        .card p {
+            font-size: 1.2em;
         }
         .footer {
             text-align: center;
@@ -44,40 +53,64 @@
             width: 100%;
             bottom: 0;
         }
+        .icon {
+            font-size: 3em;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="header">
-        <div class="navLink">
-            <h3><img src="companyImageSrc.png" height="50"><b>Test de Phishing</b></h3>
-        </div>
+        <img src="companyImageSrc.png" height="50" alt="Logo de l'entreprise">
+        <h3><b>Test de Phishing</b></h3>
     </div>
-    <div class="container" style="text-align:center">
-        <div class="jumbotron">
+    <div class="container">
+        <div class="jumbotron text-center">
             <h2>Vous avez cliqué sur un test de phishing simulé.</h2>
-            <h3>Voici quelques conseils pour vous aider à rester en sécurité à l'avenir</h3>
+            <h3>Voici quelques conseils pour vous aider à rester en sécurité à l'avenir !</h3>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <h1>Conseil #1</h1>
-                <h2>Arrêtez, Regardez, Réfléchissez</h2>
-                <p>Quelque chose vous a-t-il semblé anormal ? Reconnaissez-vous l'adresse de l'expéditeur ? Était-elle similaire mais pas identique à un email officiel ?</p>
-                <pre><p style="font-size:1.2em;">Technologie de l'Information &lt;it@company.<font color=red>co</font>&gt;</p></pre>
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="icon">
+                            <i class="fas fa-stop"></i>
+                        </div>
+                        <h1>Tip #1</h1>
+                        <h2>Arrêtez, Regardez, Réfléchissez</h2>
+                        <p>Quelque chose vous a-t-il semblé anormal ? Reconnaissez-vous l'adresse de l'expéditeur ? Était-elle similaire mais pas identique à celle d'un email officiel ?</p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4">
-                <h1>Conseil #2</h1>
-                <h2>Repérez-vous un signal d'alarme ?</h2>
-                <p>Chez COMPANY, tout email provenant d'un expéditeur externe devrait avoir un message de mise en garde en haut de l'email. Voyez-vous cette bannière ?</p>
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h1>Tip #2</h1>
+                        <h2>Repérez-vous un signal d'alarme ?</h2>
+                        <p>Chez COMPANY, tout email provenant d'un expéditeur externe devrait avoir un message de mise en garde en haut de l'email. Voyez-vous cette bannière ?</p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4">
-                <h1>Conseil #3</h1>
-                <h2>En cas de doute, supprimez-le</h2>
-                <p>Si vous pensez qu'un email est suspect, il vaut mieux pécher par excès de prudence.</p>
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="icon">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                        <h1>Tip #3</h1>
+                        <h2>En cas de doute, supprimez-le !</h2>
+                        <p>Si vous pensez qu'un email est suspect, il vaut mieux prévenir que guérir.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="footer">
-        <p>&copy; 2024 Votre Entreprise. Tous droits réservés.</p>
+        <p>&copy; 2024 AC Autrechose VFX. Tous droits réservés.</p>
     </div>
 
     <!-- Bootstrap JS and dependencies -->
